@@ -29,18 +29,13 @@ const About = () => {
             </p>
           </div>
           <div className="profile-image">
-            {/* Replace with actual image */}
-            <div className="image-placeholder">
-              {" "}
-              <img className="image-placeholder" src={drimage} alt="" />
+            <div className="image-placeholderabt">
+              <img className="image-placeholderabt1" src={drimage} alt="Dr. S. Dhanaraj" />
             </div>
           </div>
         </div>
 
-        <div
-          className="qualifications-section"
-          style={{ backgroundColor: "white" }}
-        >
+        <div className="qualifications-section">
           <h2>Educational Qualifications</h2>
           <ul>
             <li>
@@ -61,20 +56,14 @@ const About = () => {
         <div className="experience-section">
           <h2>Teaching Experience</h2>
           <div className="experience-grid">
-            <div
-              className="experience-card"
-              style={{ backgroundColor: "#2c3e50" }}
-            >
+            <div className="experience-card">
               <h3>Current Position</h3>
               <p>Assistant Professor</p>
               <p>Department of Computer Science</p>
               <p>Bishop Heber College, Tiruchirappalli</p>
               <p>Since 2007</p>
             </div>
-            <div
-              className="experience-card"
-              style={{ backgroundColor: "#2c3e50" }}
-            >
+            <div className="experience-card">
               <h3>Previous Experience</h3>
               <p>Lecturer in Computer Science</p>
               <p>Various institutions</p>
@@ -83,7 +72,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="research-section" style={{ backgroundColor: "white" }}>
+        <div className="research-section">
           <h2>Research Interests</h2>
           <div className="research-areas">
             <div className="research-area">

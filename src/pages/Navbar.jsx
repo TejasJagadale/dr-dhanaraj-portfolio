@@ -15,7 +15,6 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Check if path matches exactly or starts with (for nested routes)
   const isActive = (path) => {
     return activePath === path || (path !== "/" && activePath.startsWith(path));
   };
@@ -23,8 +22,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="/" className="navbar-link" onClick={toggleMenu}>
-          <div className="navbar-brand">Dr.S.Dhanaraj</div>
+        <a href="/" className="navbar-brand">
+          <span className="title">Dr. S. Dhanaraj</span>
+          <span className="subtitle">Computer Science Professor</span>
         </a>
 
         <button

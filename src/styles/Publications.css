@@ -2,44 +2,50 @@
 .publications-container {
   color: #333;
   line-height: 1.7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  width: 80%;
 }
 
 /* Header */
 .publications-header {
   padding: 3rem 1rem;
   text-align: center;
-  color: black;
+  background-color: #2c3e50;
+  color: white;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid #d4af37;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .publications-header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .subtitle {
   font-size: 1.1rem;
   opacity: 0.9;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Main Content */
 .publications-content {
   width: 90%;
   margin: auto;
-  padding: 2rem;
-  border-radius: 10px;
-  margin-bottom: 3rem;
+  padding: 2rem 0;
 }
 
 .publication-section {
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
+  background-color: white;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #2c3e50;
 }
 
 .publication-section h2 {
@@ -48,6 +54,9 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 0.5rem;
 }
 
 .publication-section h2 .icon {
@@ -63,32 +72,52 @@
 
 .publication-item {
   padding-bottom: 1.5rem;
-  border-bottom: 1px dashed rgb(0 0 0 / 40%);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
 }
 
 .publication-item:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 
 .publication-item h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: inherit;
+  color: #2c3e50;
 }
 
 .publication-meta {
-  font-size: 0.9rem;
-  opacity: 0.9;
+  font-size: 0.95rem;
+  color: #555;
 }
 
 .publication-meta span {
   margin-right: 0.5rem;
 }
 
+.journal {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.year {
+  color: #d4af37;
+  font-weight: 500;
+}
+
+.impact {
+  font-style: italic;
+}
+
+.publisher {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
 /* Research Stats */
 .research-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -97,7 +126,12 @@
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
 }
 
 .stat-card h3 {
@@ -106,38 +140,67 @@
   font-weight: 300;
 }
 
+.stat-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.journal-stat {
+  background-color: #f0f7ff;
+  border-top: 4px solid #2c3e50;
+}
+
+.conference-stat {
+  background-color: #fff8f0;
+  border-top: 4px solid #d4af37;
+}
+
+.book-stat {
+  background-color: #2c3e50;
+  color: white;
+  border-top: 4px solid #d4af37;
+}
+
+.book-stat p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+  .publications-container {
+    color: #333;
+    line-height: 1.7;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: 95%;
+  }
   .publications-header {
-    padding: 1.5rem 0.8rem;
-    text-align: center;
-    color: black;
-  }
-  .publications-content {
-    width: 90%;
-    margin: auto;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-  .publications-header h1 {
-    font-size: 1.8rem;
-    font-weight: bolder;
+    padding: 2rem 1rem;
   }
 
-  .publication-section h2 {
-    font-size: 1.4rem;
-    font-weight: bolder;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  .publications-header h1 {
+    font-size: 2rem;
+  }
+
+  .publications-content {
+    width: 95%;
+    padding: 1rem 0;
   }
 
   .publication-section {
     padding: 1.5rem;
   }
 
+  .publication-section h2 {
+    font-size: 1.4rem;
+  }
+
   .research-stats {
     grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.5rem 1rem;
   }
 }

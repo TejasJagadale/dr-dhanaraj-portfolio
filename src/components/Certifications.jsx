@@ -5,22 +5,25 @@ const Certifications = () => {
   return (
     <div className="certifications-container">
       {/* Header */}
-      <div className="certifications-header" >
+      <div className="certifications-header">
         <h1>Professional Certifications</h1>
         <p className="subtitle">Industry-recognized credentials validating technical expertise</p>
       </div>
 
       {/* Main Content */}
-      <div className="certifications-content" style={{ backgroundColor: '#B3C8CF' }}>
+      <div className="certifications-content">
         {/* Microsoft Certifications */}
-        <section className="certification-section" style={{ backgroundColor: 'white' }}>
+        <section className="certification-section">
           <h2>
             <span className="icon">🔧</span>
             Microsoft Certifications
           </h2>
           <div className="certification-grid">
             <div className="certification-card">
-              <h3>Microsoft Certified Professional (MCP)</h3>
+              <div className="card-header">
+                <h3>Microsoft Certified Professional (MCP)</h3>
+                <div className="certification-badge microsoft-badge">Microsoft</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2005</span> | 
                 <span className="id"> ID: 1234567</span>
@@ -31,7 +34,10 @@ const Certifications = () => {
             </div>
 
             <div className="certification-card">
-              <h3>Microsoft Technology Associate (MTA)</h3>
+              <div className="card-header">
+                <h3>Microsoft Technology Associate (MTA)</h3>
+                <div className="certification-badge microsoft-badge">Microsoft</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2018</span> | 
                 <span className="id"> ID: 7654321</span>
@@ -44,14 +50,17 @@ const Certifications = () => {
         </section>
 
         {/* Cloud & Data Science */}
-        <section className="certification-section" style={{ backgroundColor: 'white' }}>
+        <section className="certification-section">
           <h2>
             <span className="icon">☁️</span>
             Cloud & Data Science
           </h2>
           <div className="certification-grid">
             <div className="certification-card">
-              <h3>AWS Certified Cloud Practitioner</h3>
+              <div className="card-header">
+                <h3>AWS Certified Cloud Practitioner</h3>
+                <div className="certification-badge aws-badge">AWS</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2020</span> | 
                 <span className="id"> ID: AWS-CCP-9876</span>
@@ -59,11 +68,14 @@ const Certifications = () => {
               <p className="certification-desc">
                 Foundational understanding of AWS Cloud concepts, services, and architecture
               </p>
-              <div className="badge">Valid until: 2023</div>
+              <div className="validity-badge">Valid until: 2023</div>
             </div>
 
             <div className="certification-card">
-              <h3>Google Data Analytics Professional</h3>
+              <div className="card-header">
+                <h3>Google Data Analytics Professional</h3>
+                <div className="certification-badge google-badge">Google</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2021</span> | 
                 <span className="id"> Coursera</span>
@@ -76,14 +88,17 @@ const Certifications = () => {
         </section>
 
         {/* Academic & Teaching */}
-        <section className="certification-section" style={{ backgroundColor: 'white', color: 'black' }}>
+        <section className="certification-section">
           <h2>
             <span className="icon">🎓</span>
             Academic & Teaching
           </h2>
           <div className="certification-grid">
             <div className="certification-card">
-              <h3>Post Graduate Diploma in Computer Applications (PGDCA)</h3>
+              <div className="card-header">
+                <h3>Post Graduate Diploma in Computer Applications (PGDCA)</h3>
+                <div className="certification-badge academic-badge">Academic</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2003</span> | 
                 <span className="id"> Bharathidasan University</span>
@@ -91,7 +106,10 @@ const Certifications = () => {
             </div>
 
             <div className="certification-card">
-              <h3>Faculty Development Program (FDP)</h3>
+              <div className="card-header">
+                <h3>Faculty Development Program (FDP)</h3>
+                <div className="certification-badge academic-badge">Academic</div>
+              </div>
               <p className="certification-meta">
                 <span className="year">Issued: 2019</span> | 
                 <span className="id"> IIT Madras</span>
@@ -105,15 +123,15 @@ const Certifications = () => {
 
         {/* Certification Stats */}
         <div className="certification-stats">
-          <div className="stat-card" style={{ backgroundColor: '#B3C8CF' }}>
+          <div className="stat-card years-stat">
             <h3>10+</h3>
             <p>Years Certified</p>
           </div>
-          <div className="stat-card" style={{ backgroundColor: '#E5E1DA' }}>
+          <div className="stat-card domains-stat">
             <h3>4</h3>
             <p>Technology Domains</p>
           </div>
-          <div className="stat-card" style={{ backgroundColor: '#2c3e50', color: 'white' }}>
+          <div className="stat-card total-stat">
             <h3>6</h3>
             <p>Total Certifications</p>
           </div>

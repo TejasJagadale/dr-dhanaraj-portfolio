@@ -11,9 +11,9 @@ const Publications = () => {
       </div>
 
       {/* Main Content */}
-      <div className="publications-content" style={{ backgroundColor: '#B3C8CF' }}>
+      <div className="publications-content">
         {/* Journal Publications */}
-        <section className="publication-section" style={{ backgroundColor: 'white' }}>
+        <section className="publication-section">
           <h2>
             <span className="icon">📚</span>
             Journal Publications
@@ -49,7 +49,7 @@ const Publications = () => {
         </section>
 
         {/* Conference Papers */}
-        <section className="publication-section" style={{ backgroundColor: 'white' }}>
+        <section className="publication-section">
           <h2>
             <span className="icon">🎤</span>
             Conference Proceedings
@@ -74,7 +74,7 @@ const Publications = () => {
         </section>
 
         {/* Book Chapters */}
-        <section className="publication-section" style={{ backgroundColor: 'white', color: 'black' }}>
+        <section className="publication-section">
           <h2>
             <span className="icon">📖</span>
             Book Chapters
@@ -93,15 +93,15 @@ const Publications = () => {
 
         {/* Research Stats */}
         <div className="research-stats">
-          <div className="stat-card" style={{ backgroundColor: '#B3C8CF' }}>
+          <div className="stat-card journal-stat">
             <h3>15+</h3>
             <p>Journal Publications</p>
           </div>
-          <div className="stat-card" style={{ backgroundColor: '#E5E1DA' }}>
+          <div className="stat-card conference-stat">
             <h3>10+</h3>
             <p>Conference Papers</p>
           </div>
-          <div className="stat-card" style={{ backgroundColor: '#2c3e50', color: 'white' }}>
+          <div className="stat-card book-stat">
             <h3>3</h3>
             <p>Book Chapters</p>
           </div>
