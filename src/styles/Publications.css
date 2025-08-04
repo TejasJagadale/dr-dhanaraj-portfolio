@@ -1,0 +1,143 @@
+/* Publications.css */
+.publications-container {
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+.publications-header {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: black;
+}
+
+.publications-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.publications-content {
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.publication-section {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.publication-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.publication-section h2 .icon {
+  font-size: 1.4rem;
+}
+
+/* Publication Items */
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed rgb(0 0 0 / 40%);
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.publication-meta {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.publication-meta span {
+  margin-right: 0.5rem;
+}
+
+/* Research Stats */
+.research-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publications-header {
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    color: black;
+  }
+  .publications-content {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .publications-header h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+  }
+
+  .publication-section h2 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .publication-section {
+    padding: 1.5rem;
+  }
+
+  .research-stats {
+    grid-template-columns: 1fr;
+  }
+}

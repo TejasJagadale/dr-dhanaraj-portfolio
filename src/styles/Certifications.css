@@ -1,0 +1,148 @@
+/* Certifications.css */
+.certifications-container {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.certifications-header {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: black;
+}
+
+.certifications-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.certifications-content {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.certification-section {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.certification-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.certification-section h2 .icon {
+  font-size: 1.4rem;
+}
+
+/* Certification Grid */
+.certification-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: #b3c8cf;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.certification-section:nth-child(3) .certification-card {
+  background: #b3c8cf;
+}
+
+.certification-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: inherit;
+}
+
+.certification-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 0.8rem;
+}
+
+.certification-meta span {
+  margin-right: 0.8rem;
+}
+
+.certification-desc {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.badge {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+/* Stats */
+.certification-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certifications-header {
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    color: black;
+  }
+  .certifications-content {
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .certifications-header h1 {
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certification-section {
+    padding: 1rem;
+    width: 90%;
+  }
+}

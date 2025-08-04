@@ -1,0 +1,210 @@
+/* Honors.css */
+.honors-container {
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+.honors-header {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: black;
+}
+
+.honors-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main Content */
+.honors-content {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+
+.honors-section {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.honors-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.honors-section h2 .icon {
+  font-size: 1.4rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #2c3e50;
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timeline-year {
+  position: absolute;
+  left: -2rem;
+  width: 4rem;
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  padding: 0.2rem 0;
+  font-weight: bold;
+}
+
+.timeline-content {
+  padding-left: 3rem;
+}
+
+.timeline-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50;
+}
+
+.institution {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+/* Grants Grid */
+.grants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.grant-card {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grant-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta .amount {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.meta .year {
+  opacity: 0.8;
+}
+
+/* Honors List */
+.honors-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.honors-list li {
+  padding: 1.5rem 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.honors-list li:last-child {
+  border-bottom: none;
+}
+
+.honors-list h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.honors-list .meta {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Stats */
+.honors-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .honors-content {
+    width: 90%;
+    margin: 0rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .honors-header {
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    color: black;
+  }
+  .honors-header h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .grants-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .honors-section {
+    padding: 1rem;
+  }
+
+  .timeline-content {
+    padding-left: 2.3rem;
+  }
+}

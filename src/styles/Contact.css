@@ -1,0 +1,167 @@
+/* Contact.css */
+.contact-container {
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Header */
+.contact-header {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+.contact-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.contact-method {
+  background-color: #b3c8cf;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.availability-item {
+  background-color: #b3c8cf;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+/* Main Content */
+.contact-content {
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #b3c8cf;
+  margin-bottom: 3rem;
+}
+
+.contact-section {
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-section h2 .icon {
+  font-size: 1.4rem;
+}
+
+/* Contact Cards */
+.contact-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contact-method h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.contact-section:nth-child(3) .contact-method h3 {
+  color: white;
+}
+
+.contact-link {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+/* Network Grid */
+.network-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.network-card {
+  background-color: #b3c8cf;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s;
+}
+
+.network-card:hover {
+  transform: translateY(-5px);
+}
+
+.network-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.network-card p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* Availability */
+.availability {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.availability-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    width: 90%;
+    margin: 0rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #b3c8cf;
+  }
+  .contact-header h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+
+  .contact-card,
+  .network-grid,
+  .availability {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: 1.5rem;
+  }
+
+  .contact-header {
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    color: black;
+  }
+}
