@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
-import drimage from "../images/dr.png";
+import drimage from "../images/dhanraj.png";
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       {/* Mobile Image (shown only on small screens) */}
       <div className="mobile-image-container">
         <div className="profile-imagehome">
-          <img className="profile-imagehome1" src={drimage} alt="Dr. S. Dhanaraj" />
+          <img className="profile-imagehome1mob" src={drimage} alt="Dr. S. Dhanaraj" />
         </div>
       </div>
 
@@ -48,7 +48,7 @@ const Home = () => {
       {/* Desktop Image (shown only on larger screens) */}
       <div className="desktop-image">
         <div className="profile-image">
-          <img src={drimage} alt="Dr. S. Dhanaraj" />
+          <img className="profile-imagehome1" src={drimage} alt="Dr. S. Dhanaraj" />
         </div>
       </div>
     </div>

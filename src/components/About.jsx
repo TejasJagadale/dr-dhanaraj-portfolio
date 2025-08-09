@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import drimage from "../images/dr.png";
+import drimage from "../images/abtdhanraj.jpg";
 
 const About = () => {
   return (
